@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvInfoMotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipos de Motos"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <!-- Información -->
+    <TextView
+        android:id="@+id/tvTiposMotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Deportivas\n2. Cruiser\n3. Chopper\n4. Touring"
+        android:textSize="16sp"
+        android:padding="10dp" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/btnVolverInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onVolverClicked"
+        android:text="Volver" />
+
+</LinearLayout>

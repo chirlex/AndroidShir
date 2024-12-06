@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- Botón para Estado de la Moto -->
+    <Button
+        android:id="@+id/btnEstadoMoto"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Estado de la Moto" />
+
+<!-- Botón para Mantenimiento -->
+<Button
+    android:id="@+id/btnMantenimiento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mantenimiento"
+    android:layout_marginBottom="16dp" />
+
+<!-- Botón para Información de Motos -->
+<Button
+    android:id="@+id/btnInfoMotos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Información de Motos"
+    android:layout_marginBottom="16dp" />
+
+<!-- Botón para Registrar Kilometraje -->
+<Button
+    android:id="@+id/btnKilometraje"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Registrar Kilometraje"
+    android:layout_marginBottom="16dp" />
+
+<!-- Botón para Registrar Tipo de Moto -->
+<Button
+    android:id="@+id/btnTipoMoto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Registrar Tipo de Moto" />
+
+
+</LinearLayout>

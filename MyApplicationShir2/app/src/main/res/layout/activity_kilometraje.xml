@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloKilometraje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Kilometraje"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Campo para ingresar el kilometraje -->
+    <EditText
+        android:id="@+id/etKilometraje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el kilometraje"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón para guardar el kilometraje -->
+    <Button
+        android:id="@+id/btnGuardarKilometraje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Kilometraje"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

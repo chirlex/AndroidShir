@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MOTOFIT</string>
+    <string name="title_home">Pagina Principal</string>
+    <string name="title_dashboard">Ubicaciones</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Tipos de motos -->
+    <string-array name="tipos_motos">
+        <item>Deportiva</item>
+        <item>Cruiser</item>
+        <item>Touring</item>
+        <item>Off-road</item>
+        <item>Street</item>
+        <item>Scooter</item>
+    </string-array>
+</resources>

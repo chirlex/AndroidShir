@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloTipoMoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Tipo de Moto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Campo para seleccionar tipo de moto -->
+    <Spinner
+        android:id="@+id/spinnerTiposMotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/tipos_motos" />
+
+    <!-- Botón para guardar el tipo de moto -->
+    <Button
+        android:id="@+id/btnGuardarTipoMoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Tipo de Moto"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
