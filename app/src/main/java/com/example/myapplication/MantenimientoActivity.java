@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ public class MantenimientoActivity extends AppCompatActivity {
 
     private TextView tvProximoMantenimiento;
     private Button btnDetallesMantenimiento;
+    private Button btnRegresar;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -20,7 +22,12 @@ public class MantenimientoActivity extends AppCompatActivity {
 
         // Vincular vistas
         tvProximoMantenimiento = findViewById(R.id.tvProximoMantenimiento);
+        btnRegresar= findViewById(R.id.Volverinicio);
         btnDetallesMantenimiento = findViewById(R.id.btnDetallesMantenimiento);
+
+        btnRegresar.setOnClickListener(v2 -> {
+            startActivity(new Intent(MantenimientoActivity.this, MainActivity2.class));
+        });
 
         // Configurar botón de detalles
         btnDetallesMantenimiento.setOnClickListener(v ->

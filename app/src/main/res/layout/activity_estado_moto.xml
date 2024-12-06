@@ -40,8 +40,15 @@
             android:id="@+id/btnActualizarEstado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actualizar Estado"
             android:backgroundTint="@android:color/holo_purple"
+            android:text="Actualizar Estado"
             android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/Volverinicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver Inicio"
+            app:icon="@android:drawable/ic_media_previous" />
     </LinearLayout>
 </ScrollView>

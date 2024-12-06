@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ public class EstadoMotoActivity extends AppCompatActivity {
 
     private TextView tvEstadoGeneral;
     private Button btnActualizarEstado;
+    private Button btnRegresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +22,12 @@ public class EstadoMotoActivity extends AppCompatActivity {
 
         // Vincular vistas
         tvEstadoGeneral = findViewById(R.id.tvEstadoGeneral);
+        btnRegresar= findViewById(R.id.Volverinicio);
         btnActualizarEstado = findViewById(R.id.btnActualizarEstado);
 
+        btnRegresar.setOnClickListener(v2 -> {
+                    startActivity(new Intent(EstadoMotoActivity.this, MainActivity2.class));
+        });
         // Configurar botón para actualizar estado
         btnActualizarEstado.setOnClickListener(v -> {
             // Aquí puedes agregar lógica para verificar sensores o una base de datos

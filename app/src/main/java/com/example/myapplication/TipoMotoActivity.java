@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -12,6 +13,7 @@ public class TipoMotoActivity extends AppCompatActivity {
 
     private Spinner spinnerTiposMotos;
     private Button btnGuardarTipoMoto;
+    private Button btnRegresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,12 @@ public class TipoMotoActivity extends AppCompatActivity {
 
         // Vincular vistas
         spinnerTiposMotos = findViewById(R.id.spinnerTiposMotos);
+        btnRegresar= findViewById(R.id.Volverinicio);
         btnGuardarTipoMoto = findViewById(R.id.btnGuardarTipoMoto);
+
+        btnRegresar.setOnClickListener(v2 -> {
+            startActivity(new Intent(TipoMotoActivity.this, MainActivity2.class));
+        });
 
         // Configurar botón para guardar
         btnGuardarTipoMoto.setOnClickListener(v -> {

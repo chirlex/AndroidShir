@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,8 @@ public class KilometrajeActivity extends AppCompatActivity {
 
     private EditText etKilometraje;
     private Button btnGuardarKilometraje;
+    private Button btnRegresar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,12 @@ public class KilometrajeActivity extends AppCompatActivity {
 
         // Vincular vistas
         etKilometraje = findViewById(R.id.etKilometraje);
+        btnRegresar= findViewById(R.id.Volverinicio);
         btnGuardarKilometraje = findViewById(R.id.btnGuardarKilometraje);
+
+        btnRegresar.setOnClickListener(v2 -> {
+                    startActivity(new Intent(KilometrajeActivity.this, MainActivity2.class));
+        });
 
         // Configurar botón para guardar
         btnGuardarKilometraje.setOnClickListener(v -> {

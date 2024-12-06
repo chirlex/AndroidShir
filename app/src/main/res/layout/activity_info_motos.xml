@@ -27,11 +27,11 @@
 
     <!-- Botón para volver -->
     <Button
-        android:id="@+id/btnVolverInfo"
+        android:id="@+id/btnVolverinicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:onClick="onVolverClicked"
-        android:text="Volver" />
+        android:text="Volver Inicio" />
 
 </LinearLayout>
